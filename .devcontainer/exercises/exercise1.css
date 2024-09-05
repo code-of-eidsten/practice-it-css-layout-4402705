@@ -1,18 +1,84 @@
 .container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 2fr .5fr;
+  gap: 10px;
+  grid-template-areas: "header header nav"
+    "main main main"
+    "contact contact contact";
+
 }
 
 .item-1 {
   border: 1px solid green;
+  background-color: lightgreen;
+  grid-area: header;
+
 }
 
 .item-2 {
   border: 1px solid blue;
+  background-color: lightblue;
+  grid-area: nav;
 }
 
 .item-3 {
   border: 1px solid yellow;
+  background-color: lightyellow;
+  grid-area: main;
 }
 
 .item-4 {
-  border: 1px solid pink;
+  border: 1px solid hotpink;
+  background-color: pink;
+  grid-area: contact;
 }
+
+/* .item-2,
+.item-3 {
+  background-color: green;
+} */
+
+/*style all children inside gridcontainer*/
+/* .container>* {
+  background-color: aqua;
+} */
+
+/*FlexBox time!*/
+/* .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+* {
+  height: 20%;
+}
+
+.item-1 {
+  border: 1px solid green;
+  background-color: lightgreen;
+  grid-area: header;
+
+}
+
+.item-2 {
+  border: 1px solid blue;
+  background-color: lightblue;
+
+}
+
+.item-3 {
+  border: 1px solid yellow;
+  background-color: lightyellow;
+
+}
+
+.item-4 {
+  border: 1px solid hotpink;
+  background-color: pink;
+} */
