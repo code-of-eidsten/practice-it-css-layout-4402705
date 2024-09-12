@@ -1,0 +1,20 @@
+.navigation, .title, .main, .related, .ads, .footer {
+  border: 1px solid black;
+}
+
+@media (min-width: 600px){
+  
+  .mid{
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+  }
+
+  .main{
+    width: 70%;
+  }
+ 
+  .related{
+    width: 30%;
+  }
+}
